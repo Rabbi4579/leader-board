@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+ul li{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+
+
+/* -------utilitis css end-------- */
+
+/* -------header part css start----- */
+#header{
+   padding: 20px 0;
+    background: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header-container{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+} 
+.header-logo img{
+    width: 40px;
+    height: 50px;
+}
+.header-menu nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin-left: 36px;
+}
+nav ul li a{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* -------header part css end----- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------Media Queries responsive---------- */
+@media screen and (max-width:576px) {
+    /* ----header part -------- */
+    .header-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul li{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    /* -----header part----- */
+    .header-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
