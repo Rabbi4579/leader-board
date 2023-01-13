@@ -1,108 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
-ul li{
-    list-style-type: none;
-
+ul li {
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
 }
-
-
-
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: #ffffff;
+  width: 870px;
+}
+.section-title {
+    color: #562eff;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 /* -------utilitis css end-------- */
 
 /* -------header part css start----- */
-#header{
-   padding: 20px 0;
-    background: #562EFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#header {
+  padding: 20px 0;
+  background: #562eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header-container{
-    width: 870px;
-    display: flex;
-    justify-content: space-between;
-} 
-.header-logo img{
-    width: 40px;
-    height: 50px;
+.header-container {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
 }
-.header-menu nav ul{
-    display: flex;
-    align-items: center;
+.header-logo img {
+  width: 40px;
+  height: 50px;
 }
-nav ul li{
-    margin-left: 36px;
+.header-menu nav ul {
+  display: flex;
+  align-items: center;
 }
-nav ul li a{
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
+nav ul li {
+  margin-left: 36px;
 }
-
+nav ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
 
 /* -------header part css end----- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------Media Queries responsive---------- */
-@media screen and (max-width:576px) {
-    /* ----header part -------- */
-    .header-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul{
-        flex-direction: column;
-        gap: 20px;
-    }
-    nav ul li{
-        margin-left: 0;
-    }
+/* -------top player part start----- */
+.top-players {
+  padding: 33px 33px 42px 33px;
 }
 
-@media screen and (min-width:577px) and (max-width:992px) {
-    /* -----header part----- */
-    .header-container{
-        flex-direction: column;
-        align-items: center;
-    }
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 80px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player-name {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin: 30px 0;
+}
+
+/* ------blog part start---------- */
+.bolgs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 117px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    color: #000000;
+    font-weight: 500;
+font-size: 20px;
+padding-right: 63px;
+}
+.author-details{
+    color: #9F9F9F;
+    font-weight: 400;
+font-size: 16px;
+
+}
+.author-details a{
+    color: #562EFF;
+    font-weight: 400;
+font-size: 16px;
+}
+
+/* ---------Media Queries responsive---------- */
+@media screen and (max-width: 576px) {
+  /* ----header part -------- */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav ul li {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* -----header part----- */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
