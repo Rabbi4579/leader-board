@@ -70,7 +70,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
-  grid-column-gap: 80px;
+  grid-column-gap: 84px;
 }
 .player {
   display: flex;
@@ -92,10 +92,14 @@ hr{
 }
 
 /* ------blog part start---------- */
+.top-blogs {
+    padding: 0px 33px 42px 33px;
+  }
 .bolgs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+    grid-column-gap: 46px;
 }
 .blog{
     display: flex;
@@ -139,7 +143,27 @@ font-size: 16px;
   nav ul li {
     margin-left: 0;
   }
+    /* -----top player part------ */
+  .players, .bolgs{
+    grid-template-columns: repeat(1, 1fr);
+ }
+ .player, .blog{
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ .container{
+    width: 100%;
+ }
+ /* .section-title {
+    text-align: center;
+} */
+.blog-info {
+    margin-left: 0;
 }
+}
+
+ 
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
   /* -----header part----- */
@@ -147,4 +171,12 @@ font-size: 16px;
     flex-direction: column;
     align-items: center;
   }
+
+  /* players */
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+ }
+ .bolgs{
+    grid-template-columns: repeat(1, 1fr);
+ }
 }
