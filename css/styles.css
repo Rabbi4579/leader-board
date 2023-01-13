@@ -130,6 +130,25 @@ font-size: 16px;
 }
 
 /* ---------Media Queries responsive---------- */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /* -----header part----- */
+    .header-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* players */
+    .players{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .bolgs{
+      grid-template-columns: repeat(1, 1fr);
+   }
+  }
+
+  
+
+
 @media screen and (max-width: 576px) {
   /* ----header part -------- */
   .header-container {
@@ -144,7 +163,10 @@ font-size: 16px;
     margin-left: 0;
   }
     /* -----top player part------ */
-  .players, .bolgs{
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+ }
+ .bolgs{
     grid-template-columns: repeat(1, 1fr);
  }
  .player, .blog{
@@ -165,18 +187,3 @@ font-size: 16px;
 
  
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  /* -----header part----- */
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* players */
-  .players{
-    grid-template-columns: repeat(2, 1fr);
- }
- .bolgs{
-    grid-template-columns: repeat(1, 1fr);
- }
-}
