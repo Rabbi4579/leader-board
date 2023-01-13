@@ -20,6 +20,7 @@ main {
 .container {
   background-color: #ffffff;
   width: 870px;
+  margin-top: 20px;
 }
 .section-title {
     color: #562eff;
