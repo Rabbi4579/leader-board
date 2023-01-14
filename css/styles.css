@@ -15,12 +15,14 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   background-color: #ffffff;
   width: 870px;
   margin-top: 20px;
+  padding: 33px 33px 42px 33px;
 }
 .section-title {
     color: #562eff;
@@ -129,7 +131,65 @@ font-size: 16px;
     font-weight: 400;
 font-size: 16px;
 }
-
+/* -------latest courses------- */
+.courses{
+  display: flex;
+  justify-content: space-between;
+}
+.course{
+  Width:252.42px;
+  height: 269.79px;
+  filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+.course img{
+  width: 224px;
+  height: 104px;
+}
+.course-title{
+  color: #1E1E1E;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+}
+.course-author{
+  color: #ED6B4F;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.couse-info{
+  display: flex;
+  align-items: center;
+}
+.couse-info p{
+  margin-left: 10px;
+  color: #A2A2A2;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.course-duration{
+  margin-left: 30px;
+  background: #FEE5DF;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #FF4A60;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.fa-star{
+  font-size: 12px;
+}
+.fa-star.filled{
+  color: #FFC014;
+}
+.fa-star.empty{
+  color: #AEAEAE;
+}
 /* ---------Media Queries responsive---------- */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     /* -----header part----- */
@@ -145,10 +205,24 @@ font-size: 16px;
    .bolgs{
       grid-template-columns: repeat(1, 1fr);
    }
+
+   /* cousees */
+   .courses{
+    flex-direction: column;
+    padding-left: 33px;
+    
+  }
+  .container{
+    width: 100%;
+    margin-left: 33px;
+  }
+  .section-title{
+    padding-left: 33px;
   }
 
-  
+  }
 
+ 
 
 @media screen and (max-width: 576px) {
   /* ----header part -------- */
@@ -183,6 +257,14 @@ font-size: 16px;
 } */
 .blog-info {
     margin-left: 0;
+}
+/* -----course styles------- */
+.courses{
+  flex-direction: column;
+  padding-left: 33px;
+}
+.section-title {
+  margin-left: 33px;
 }
 }
 
